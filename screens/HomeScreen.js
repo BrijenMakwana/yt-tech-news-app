@@ -14,7 +14,6 @@ const HomeScreen = () => {
         })
             .then( (response) =>{
                 // handle success
-                console.log(response.data.articles);
                 setArticles(response.data.articles);
             })
             .catch(function (error) {
