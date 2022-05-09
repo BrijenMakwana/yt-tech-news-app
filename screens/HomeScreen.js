@@ -9,7 +9,7 @@ const HomeScreen = () => {
     const getNews = () => {
         axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=c1ef3317ba2e48c8aeab23ad33adb6e9',{
             params:{
-                category: "technology"
+                category: "technology",
             }
         })
             .then( (response) =>{
@@ -53,6 +53,7 @@ export default HomeScreen;
 
 const styles = StyleSheet.create({
     container:{
-
+        flex: 1,
+        backgroundColor: '#fff',
     }
 })
