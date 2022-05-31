@@ -41,6 +41,7 @@ const HomeScreen = () => {
                         author = {item.author}
                         publishedAt = {item.publishedAt}
                         sourceName = {item.source.name}
+                        url={item.url}
                     />}
                 keyExtractor = {(item) => item.title}
             />
